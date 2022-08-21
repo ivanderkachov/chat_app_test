@@ -7,7 +7,7 @@ import {
   postMessageCN,
   getUpdatedConversations
 } from "../../redux/reducers/chat";
-
+max-height: 25px;
 import "./chat.css";
 
 import Conversation from "../../components/conversation/conversation";
