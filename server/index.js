@@ -13,17 +13,13 @@ const server = http.createServer(app)
 const router = express.Router()
 
 
-const port = config.port || 8090
+const port = process.env.PORT || 8090;
 
 
-// const corsOptions = {
-//   origin: "*",
-//   credentials: true,
-//   optionSuccessStatus: 200,
-// };
-// app.use(cors(corsOptions))
+app.use(cors())
 
-mongooseService.connect(config.mongoURL)
+const dbUrl = "mongodb+srv://ivanderkachov:63441257I@cluster0.uwzfx.mongodb.net/DB_1"
+mongooseService.connect(dbUrl)
 
 // const newObj = new Users({
 //   name: 'Tom',
