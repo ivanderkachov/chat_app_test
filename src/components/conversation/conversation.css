@@ -36,8 +36,9 @@
   font-size: large;
   color: grey;
   display: inline-block;
-  max-width: 400px;
-  white-space: nowrap;
+  max-width: 350px;
+  min-width: 100px;
+  max-height: 20px;
   overflow: hidden ;
   text-overflow: ellipsis;
 }
